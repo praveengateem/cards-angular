@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="call no 6">
+            <div class="card">
+                <form [formGroup]="RegistrationForm" (ngSubmit)="onsubmit()">
+                    <input type="text" class="form control"placeholder="image url" name="image" formcontrolname="image">
+                    <div *ngif="RegistrationForm.get('image')?.invalid && RegistrationForm.get('image')?.touched">
+                        enter a valid url
+                    </div>
+                    <input type="text" class="form control"placeholder="alt url" name="alt" formcontrolname="alt">
+                    <div *ngif="RegistrationForm.get('alt')?.invalid && RegistrationForm.get('alt')?.touched">
+                        enter a valid url
+                    </div>
+                    <input type="text" class="form control"placeholder="title url" name="title" formcontrolname="title">
+                    <div *ngif="RegistrationForm.get('title')?.invalid && RegistrationForm.get('title')?.touched">
+                        enter a valid url
+                    </div>
+                    <input type="text" class="form control"placeholder="description url" name="description" formcontrolname="desription">
+                    <div *ngif="RegistrationForm.get('description')?.invalid && RegistrationForm.get('description')?.touched">
+                        enter a valid url
+                    </div>
+                    <input type="text" class="form control"placeholder="rating url" name="rating" formcontrolname="rating">
+                    <div *ngif="RegistrationForm.get('rating')?.invalid && RegistrationForm.get('rating')?.touched">
+                        enter a valid url
+                    </div>
+                    <input type="text" class="form control"placeholder="price url" name="price" formcontrolname="price">
+                    <div *ngif="RegistrationForm.get('price')?.invalid && RegistrationForm.get('price')?.touched">
+                        enter a valid url
+                    </div><input type="text" class="form control"placeholder="buynow url" name="buynow" formcontrolname="buynow">
+                    <div *ngif="RegistrationForm.get('buynow')?.invalid && RegistrationForm.get('buynow')?.touched">
+                        enter a valid url
+                    </div><input type="text" class="form control"placeholder="addtocard url" name="addtocard" formcontrolname="addtocard">
+                    <div *ngif="RegistrationForm.get('addtocard')?.invalid && RegistrationForm.get('addtocard')?.touched">
+                        enter a valid url
+                    </div><input type="text" class="form control"placeholder="paymenttype url" name="paymenttype" formcontrolname="paymenttype">
+                    <div *ngif="RegistrationForm.get('paymenttype')?.invalid && RegistrationForm.get('paymenttype')?.touched">
+                        enter a valid url
+                    </div><input type="text" class="form control"placeholder="coupons url" name="image" formcontrolname="coupons">
+                    <div *ngif="RegistrationForm.get('coupons')?.invalid && RegistrationForm.get('coupons')?.touched">
+                        enter a valid url
+                    </div>
+                    <button class="btn-primary" type="submit">register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

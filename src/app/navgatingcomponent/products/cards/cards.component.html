@@ -1,0 +1,11 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let i of cards">
+        <div class="card">
+            <div class="card-img">
+                <img src="{{i.image}}" alt="{{i.alt}}">
+                <h1 class="product-title">{{i.title}}</h1>
+                <p class="product-price">{{i.price}}</p>
+            </div>
+        </div>
+    </div>
+</div>
